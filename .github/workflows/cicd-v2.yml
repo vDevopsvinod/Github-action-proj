@@ -41,9 +41,8 @@ run: trivy fs --fromat table -o fs-report.json .
 
 name: gitleaks installation
 run:sudo apt install gitleaks -y 
-
 -name: gitleaks code scan
-run: git leaks delet source . -r gitleakes-report.json -f json
+run: git leaks detect source . -r gitleakes-report.json -f json
      
 
    
